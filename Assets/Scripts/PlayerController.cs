@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float _kickPower = 5f;
     Rigidbody2D _rb = default;
     GameObject _kick;
+    [SerializeField] float _lifeTime = 2f;
 
     void Start()
     {
@@ -25,6 +26,9 @@ public class PlayerController : MonoBehaviour
         {
             Rigidbody2D rb = _kick.GetComponent<Rigidbody2D>();
             rb.AddForce(_kickPower * Vector2.left, ForceMode2D.Impulse);
+            //Vector2 power = new Vector2(-10f, 10f);
+            //rb.AddForce(power, ForceMode2D.Impulse);
+            Destroy(rb, _lifeTime);
         }
     }
 }
