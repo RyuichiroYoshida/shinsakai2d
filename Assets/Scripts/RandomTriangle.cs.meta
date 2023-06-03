@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: 658e5b557b6c7444aba87abad25e45ea
+guid: a2a58e61896cd04448ee392c6d0c2342
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - _kickPrefab: {instanceID: 0}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
